@@ -1,0 +1,162 @@
+═════════════════════════════════════════════════════════════════════════════
+                         INSTALLAZIONE PYTHON 3.12
+═════════════════════════════════════════════════════════════════════════════
+
+⚠️  SITUAZIONE ATTUALE
+─────────────────────────────────────────────────────────────────────────────
+
+✗ Lo script SETUP_FIX.bat ha rilevato: "Nessuna versione Python stabile"
+
+Motivo: Hai solo Python 3.14 (beta) che non è supportato da CrewAI
+
+Soluzione: Installare Python 3.12 (versione stabile)
+
+
+🎯 COSA FARE (4 passaggi semplici)
+─────────────────────────────────────────────────────────────────────────────
+
+OPZIONE 1: Automatico (30 secondi)
+──────────────────────────────────
+Doppio click su: SCARICA_PYTHON.bat
+(si aprirà il browser al link di download)
+
+
+OPZIONE 2: Manuale (se preferisci)
+──────────────────────────────────
+1. Apri browser
+2. Vai a: https://www.python.org/downloads/
+3. Scarica: "Python 3.12.x Windows installer (64-bit)"
+
+
+📥 DOPO AVER SCARICATO
+─────────────────────────────────────────────────────────────────────────────
+
+1. Apri la cartella Download
+2. Doppio click su: python-3.12.x-amd64.exe
+3. Attendi apertura finestra setup
+4. Quando vedi questa schermata:
+
+   ┌─────────────────────────────────────────────────┐
+   │ Python 3.12 Setup                               │
+   ├─────────────────────────────────────────────────┤
+   │                                                 │
+   │  □ Install launcher for all users              │
+   │  □ Add Python 3.12 to PATH  ← SPUNTA QUESTO!  │
+   │                                                 │
+   │     [Install Now]   [Customize Installation]  │
+   │                                                 │
+   └─────────────────────────────────────────────────┘
+
+   ⭐ SPUNTA LA CASELLA: "Add Python 3.12 to PATH"
+
+5. Clicca: "Install Now"
+6. Attendi completamento (apparirà "Setup was successful")
+7. RIAVVIA IL COMPUTER (⚠️ IMPORTANTE!)
+
+
+🔄 DOPO RIAVVIO COMPUTER
+─────────────────────────────────────────────────────────────────────────────
+
+1. Apri PowerShell o CMD
+2. Esegui:
+
+   py -3.12 --version
+
+3. Dovresti vedere: "Python 3.12.x"
+4. Se sì: ✅ Python 3.12 è installato correttamente!
+5. Se no: Controlla che "Add Python to PATH" fosse spuntato
+
+
+✅ ULTIMO PASSO: ESEGUI SETUP_FIX.BAT
+─────────────────────────────────────────────────────────────────────────────
+
+Dopo aver verificato Python 3.12:
+
+1. Apri: C:\Users\gabri\Desktop\CREW\
+2. Doppio click su: SETUP_FIX.bat
+3. Attendi 5-10 minuti
+4. Vedrai: "✅ SETUP COMPLETATO CON SUCCESSO!"
+5. Fine! ✅
+
+
+⏱️ TEMPI TOTALI
+─────────────────────────────────────────────────────────────────────────────
+
+Scarica Python 3.12:        2-3 minuti
+Installa:                   2-3 minuti
+Riavvia computer:           1-2 minuti
+SETUP_FIX.bat:              5-10 minuti
+─────────────────────────────────────────
+TOTALE:                     10-20 minuti
+
+
+🆘 PROBLEMI COMUNI
+─────────────────────────────────────────────────────────────────────────────
+
+Q: "python.org non si apre"
+A: Copia questo link in browser: https://www.python.org/downloads/
+
+Q: "Non vedo 'Add Python to PATH'"
+A: Assicurati di essere nella prima schermata del setup
+   (Se vedi "Customize Installation", clicca "Back")
+
+Q: "Setup fallisce"
+A: Disinstalla Python (Programmi -> Disinstalla)
+   Riavvia
+   Reinstalla Python 3.12 seguendo gli step
+
+Q: "Dopo riavvio, ancora 'py -3.12' non funziona"
+A: Significa PATH non è aggiornato
+   Apri: "Variabili d'ambiente" (Pannello Controllo)
+   Verifica PATH contenga: C:\Users\[username]\AppData\Local\Programs\Python\Python312
+   Se manca, aggiungi manualmente
+
+Q: "SETUP_FIX.bat ancora non trova Python 3.12"
+A: 1. Verifica: py -3.12 --version (deve funzionare)
+   2. Riavvia il computer (se non già fatto)
+   3. Esegui di nuovo SETUP_FIX.bat
+   4. Se persiste, prova comandi manuali (vedi sotto)
+
+
+💻 COMANDI MANUALI (Se SETUP_FIX.bat non funziona)
+─────────────────────────────────────────────────────────────────────────────
+
+Apri PowerShell ed esegui:
+
+cd C:\Users\gabri\Desktop\CREW
+rmdir /s /q venv
+py -3.12 -m venv venv
+venv\Scripts\activate.bat
+pip install --upgrade pip
+pip install crewai crewai-tools langchain langchain-openai litellm python-dotenv requests PyYAML
+
+Se tutto funziona, vedrai: ✅ (senza errori)
+
+
+🎓 DOPO SETUP COMPLETATO
+─────────────────────────────────────────────────────────────────────────────
+
+Per avviare il sistema:
+
+cd src\coding_crew
+python main.py
+
+Oppure usa il batch script:
+.\RUN_CREW.bat
+
+
+═════════════════════════════════════════════════════════════════════════════
+
+                    PROCEDURA RAPIDA (TL;DR):
+
+    1. Doppio click: SCARICA_PYTHON.bat
+    2. Scarica Python 3.12 (spunta PATH)
+    3. Riavvia computer
+    4. Doppio click: SETUP_FIX.bat
+    5. Attendi completamento
+    6. Fine! ✅
+
+═════════════════════════════════════════════════════════════════════════════
+
+Data: 2 Marzo 2026
+Status: Pronto all'uso

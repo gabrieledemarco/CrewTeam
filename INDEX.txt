@@ -1,0 +1,202 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                         🚀 CREW - QUICK INDEX 🚀                            ║
+║                                                                               ║
+║              CrewAI Multi-Agent Development System on Desktop                ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+📍 LOCATION: C:\Users\gabri\Desktop\CREW\
+
+════════════════════════════════════════════════════════════════════════════════
+📖 LEGGI QUESTI FILE PRIMA DI INIZIARE
+════════════════════════════════════════════════════════════════════════════════
+
+1️⃣  START_HERE.md (3 minuti)
+    → Guida rapida di avvio
+    → I 5 passi principali
+    → Dove salvare i risultati
+
+2️⃣  SETUP.md (10 minuti) 
+    → Setup iniziale completo
+    → Checklist step-by-step
+    → Risoluzione dei problemi
+
+3️⃣  README.md
+    → Documentazione completa
+    → Configurazione avanzata
+    → Troubleshooting
+
+════════════════════════════════════════════════════════════════════════════════
+🎯 COME ESEGUIRE
+════════════════════════════════════════════════════════════════════════════════
+
+OPZIONE 1 - PIÙ VELOCE (2 click):
+  • Doppio click su: RUN_CREW.bat
+  • Segui i prompt
+  
+OPZIONE 2 - MANUALE:
+  • Apri PowerShell
+  • Esegui: cd C:\Users\gabri\Desktop\CREW\src\coding_crew
+  • Esegui: python main.py
+
+════════════════════════════════════════════════════════════════════════════════
+📁 STRUTTURA DEL PROGETTO
+════════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTATION FILES:
+  ✅ START_HERE.md           ← Leggi primo!
+  ✅ SETUP.md                ← Setup completo
+  ✅ README.md               ← Documentazione principale
+  ✅ DEPLOYMENT_GUIDE.md     ← Setup e troubleshooting
+  ✅ ARCHITECTURE.md         ← Diagrammi e architettura
+  ✅ IMPLEMENTATION.md       ← Dettagli tecnici
+  ✅ DELIVERABLES.md         ← Inventario progetto
+
+EXECUTABLE FILES:
+  ✅ RUN_CREW.bat            ← Doppio click per eseguire!
+  ✅ quickstart.sh           ← Script per Linux/WSL
+
+CONFIGURATION:
+  ✅ requirements.txt        ← Dipendenze Python
+  ✅ pyproject.toml          ← Config progetto
+
+CODE:
+  ✅ src/coding_crew/        ← Codice principale
+     ├── main.py             ← Entry point
+     ├── crew.py             ← Orchestrator
+     ├── agents.py           ← 5 agenti specializzati
+     └── config/             ← Configurazione sistema
+
+════════════════════════════════════════════════════════════════════════════════
+⚡ QUICK START (5 MINUTI)
+════════════════════════════════════════════════════════════════════════════════
+
+1. AVVIA OLLAMA (PowerShell - mantieni aperto!)
+   $env:OLLAMA_HOST = "0.0.0.0:11434"
+   & ollama serve
+
+2. SCARICA MODELLI (nuovo PowerShell - 5 min)
+   ollama pull llama2:7b
+   ollama pull codellama:7b
+
+3. ESEGUI CREW
+   OPZIONE A: Doppio click su RUN_CREW.bat
+   OPZIONE B: python C:\Users\gabri\Desktop\CREW\src\coding_crew\main.py
+
+4. SEGUI I PROMPT
+   - Inserisci nome progetto
+   - Scrivi i tuoi requisiti
+   - Attendi 20-30 minuti
+   - Valuta i risultati
+
+════════════════════════════════════════════════════════════════════════════════
+🎯 FLUSSO OPERATIVO
+════════════════════════════════════════════════════════════════════════════════
+
+INPUT: User Requirements
+    ↓
+PMO ANALYSIS → ARCHITECTURE → CODE GENERATION → CODE REVIEW → TESTS → EVALUATION
+    ↓
+USER FEEDBACK MENU:
+  • [ACCEPT] - Finito! (incrementa versione)
+  • [REFINE] - Chiedi miglioramenti (itera)
+  • [RESTART] - Nuovo progetto
+  • [VIEW] - Vedi output precedenti
+  • [EXIT] - Esci
+
+════════════════════════════════════════════════════════════════════════════════
+📊 OUTPUT & RISULTATI
+════════════════════════════════════════════════════════════════════════════════
+
+Dopo l'esecuzione, troverai i risultati in:
+  outputs/nome-progetto/
+  ├── .git/           ← Git repository completo
+  ├── requirements/   ← Specifiche tecniche
+  ├── architecture/   ← Design del sistema
+  ├── code/          ← Codice generato
+  ├── reviews/       ← Rapporto di revisione
+  └── tests/         ← Suite di test
+
+════════════════════════════════════════════════════════════════════════════════
+🔧 TROUBLESHOOTING RAPIDO
+════════════════════════════════════════════════════════════════════════════════
+
+❌ "Ollama not found"
+→ Assicurati di avere il primo terminale con Ollama aperto
+
+❌ "ModuleNotFoundError: crewai"
+→ Attiva: & "$HOME\crewai-env\Scripts\Activate.ps1"
+
+❌ "Model not found"
+→ Scarica manualmente: ollama pull llama2:7b codellama:7b
+
+→ Leggi SETUP.md per altri problemi
+
+════════════════════════════════════════════════════════════════════════════════
+✅ FEATURE DEL SISTEMA
+════════════════════════════════════════════════════════════════════════════════
+
+✅ 6-Stage Development Pipeline
+   - PMO Requirements Analysis
+   - Architecture Design
+   - Code Generation
+   - Code Review
+   - Test Generation
+   - PMO Evaluation
+
+✅ Iterative Feedback Loop
+   - PMO valutatione intelligente
+   - Menu di feedback interattivo
+   - Versioning automatico (v1, v2, v3...)
+
+✅ Complete Git Integration
+   - Auto-commits dopo ogni stage
+   - Versioning con tag
+   - Full commit history
+
+✅ Structured Output Persistence
+   - Organizzazione per stage
+   - Metadati JSON
+   - Cronologia completa
+
+✅ Offline Operation
+   - Ollama local
+   - Nessun API cloud needed
+
+════════════════════════════════════════════════════════════════════════════════
+📚 DOCUMENTAZIONE
+════════════════════════════════════════════════════════════════════════════════
+
+NUMERO PAGINE | FILE
+──────────────┼──────────────────────
+      5 min   | START_HERE.md
+     10 min   | SETUP.md
+     20 min   | README.md
+     15 min   | DEPLOYMENT_GUIDE.md
+     25 min   | ARCHITECTURE.md
+     20 min   | IMPLEMENTATION.md
+     10 min   | DELIVERABLES.md
+
+════════════════════════════════════════════════════════════════════════════════
+🎓 PROSSIMI PASSI
+════════════════════════════════════════════════════════════════════════════════
+
+1. Leggi START_HERE.md (5 min)
+2. Segui SETUP.md per configurare (15 min)
+3. Esegui il sistema con RUN_CREW.bat
+4. Crea il tuo primo progetto
+5. Itera con feedback fino a soddisfazione
+
+════════════════════════════════════════════════════════════════════════════════
+
+✨ SEI PRONTO PER INIZIARE! ✨
+
+Primo file da leggere: START_HERE.md
+Primo comando da eseguire: RUN_CREW.bat
+
+Domande? Consulta SETUP.md oppure README.md
+
+Buon lavoro! 🚀
+
+════════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,127 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                      ⚠️  LEGGI PRIMA DI CONTINUARE ⚠️                      ║
+║                                                                            ║
+║                     Errore Python 3.14 - Soluzione Rapida                 ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+🔴 PROBLEMA IDENTIFICATO
+═════════════════════════════════════════════════════════════════════════════
+
+Errore: "ERROR: Failed building wheel for tiktoken, regex"
+Causa:  Python 3.14 (beta) non ha wheel pre-compilate
+
+Il tuo sistema sta cercando di compilare tiktoken e regex da source,
+ma manca il compilatore Rust.
+
+Soluzione: Usare Python 3.12 o 3.13 (versioni stabili con wheel pre-compilate)
+
+
+🟢 SOLUZIONE - 3 OPZIONI
+═════════════════════════════════════════════════════════════════════════════
+
+OPZIONE 1: Script Batch Automatico (CONSIGLIATO)
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  Doppio click su:  SETUP_FIX.bat                                       │
+│                                                                         │
+│  Lo script farà automaticamente:                                       │
+│    ✓ Trova Python 3.12/3.13                                           │
+│    ✓ Elimina vecchio venv                                             │
+│    ✓ Crea nuovo venv con Python stabile                               │
+│    ✓ Installa tutte le dipendenze                                     │
+│    ✓ Verifica che tutto funziona                                      │
+│                                                                         │
+│  Tempo: ~5-10 minuti                                                    │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+OPZIONE 2: Script PowerShell Automatico
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  Apri PowerShell e esegui:                                             │
+│                                                                         │
+│    powershell -ExecutionPolicy Bypass -File "SETUP_FIX.ps1"            │
+│                                                                         │
+│  Stessa funzione del .bat ma con interfaccia colorata                 │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+OPZIONE 3: Comandi Manuali
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  Apri PowerShell ed esegui:                                            │
+│                                                                         │
+│    cd C:\Users\gabri\Desktop\CREW                                      │
+│    rmdir /s /q venv                                                    │
+│    py -3.12 -m venv venv                                               │
+│    venv\Scripts\activate.bat                                           │
+│    pip install --upgrade pip                                          │
+│    pip install crewai crewai-tools langchain langchain-openai ^        │
+│      litellm python-dotenv requests PyYAML                            │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+✅ VERIFICARE CHE FUNZIONA
+═════════════════════════════════════════════════════════════════════════════
+
+Dopo la correzione, esegui:
+
+  python -c "import crewai; print('✅ OK')"
+
+Se vedi "✅ OK", il setup è completato!
+
+
+🎯 DOPO LA CORREZIONE
+═════════════════════════════════════════════════════════════════════════════
+
+Opzione A - Avvia il sistema direttamente:
+
+  cd src\coding_crew
+  python main.py
+
+Opzione B - Usa lo script batch la prossima volta:
+
+  deactivate
+  .\RUN_CREW.bat
+
+
+📋 FILE UTILI
+═════════════════════════════════════════════════════════════════════════════
+
+  🚀 SETUP_FIX.bat        ← Script automatico Batch (doppio click)
+  🚀 SETUP_FIX.ps1        ← Script automatico PowerShell
+  📖 QUICK_FIX.md         ← Guida rapida (questo file)
+  📖 PYTHON_FIX.md        ← Guida dettagliata
+  🔧 RUN_CREW.bat         ← Esegui il sistema (dopo correzione)
+
+
+⚠️  SE NON HAI PYTHON 3.12/3.13
+═════════════════════════════════════════════════════════════════════════════
+
+Se lo script dice "Python 3.12 non trovato":
+
+  1. Scarica Python 3.12 da https://www.python.org/downloads/
+  2. Durante l'installazione, SPUNTA: "Add Python to PATH"
+  3. RIAVVIA il computer
+  4. Esegui di nuovo SETUP_FIX.bat
+
+
+🆘 PROBLEMI?
+═════════════════════════════════════════════════════════════════════════════
+
+Leggi i dettagli in:
+  - PYTHON_FIX.md (guida completa con troubleshooting)
+  - QUICK_FIX.md (versione corta)
+
+
+═════════════════════════════════════════════════════════════════════════════
+
+Ora scegli un'opzione e inizia! 🚀
+
+Recommended: Doppio click su SETUP_FIX.bat → Attendi 5-10 minuti → Fine!
+
+═════════════════════════════════════════════════════════════════════════════
