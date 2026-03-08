@@ -1,0 +1,2 @@
+[console_scripts]
+run-crew = coding_crew.main:main

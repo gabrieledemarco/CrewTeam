@@ -1,0 +1,36 @@
+# Documentation files to exclude
+IMPLEMENTATION_GUIDE.md
+IMPLEMENTATION.md
+IMPLEMENTAZIONE_FIX_REPORT.md
+OLLAMA_SETUP_VERIFICATO.md
+RIEPILOGO_ANALISI.md
+RIEPILOGO_CORREZIONI.md
+RIEPILOGO_SOLUZIONE.txt
+VERIFICATION_CHECKLIST.md
+VERIFICHE_FUNZIONAMENTO.md
+
+# Virtual environments
+venv/
+.venv/
+src/coding_crew/venv/
+
+# Generated outputs
+outputs/
+src/coding_crew/outputs/
+.crew_temp_outputs/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# IDE/editor
+.idea/
+.vscode/
+
+# Local secrets/config
+crew_config.json
+.env
+.env.*

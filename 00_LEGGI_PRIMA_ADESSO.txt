@@ -1,0 +1,106 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                    🔴 AZIONE IMMEDIATA RICHIESTA 🔴                       ║
+║                                                                            ║
+║                  Installa Python 3.12 prima di continuare                 ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+📊 SITUAZIONE ATTUALE
+═════════════════════════════════════════════════════════════════════════════
+
+❌ PROBLEMA RILEVATO:
+   Lo script SETUP_FIX.bat ha detto:
+   "Nessuna versione Python stabile trovata"
+
+✓ MOTIVO:
+   Il tuo sistema ha SOLO Python 3.14 (beta)
+   CrewAI richiede Python 3.10-3.13 (stabile)
+
+✓ SOLUZIONE:
+   Installare Python 3.12 (5-10 minuti)
+
+
+🎯 COSA FARE SUBITO (4 PASSI)
+═════════════════════════════════════════════════════════════════════════════
+
+PASSO 1️⃣  SCARICA PYTHON
+   Doppio click su: SCARICA_PYTHON.bat
+   (Apre il browser al download automaticamente)
+
+   ⚪ Se non si apre il browser:
+      Visita manualmente: https://www.python.org/downloads/
+
+PASSO 2️⃣  SCARICA IL FILE
+   Dalla pagina python.org:
+   • Scorri fino a "Python 3.12.x"
+   • Clicca: "Windows installer (64-bit)"
+   • Il file si scarica in Download/
+
+PASSO 3️⃣  INSTALLA PYTHON
+   Doppio click su: python-3.12.x-amd64.exe
+   Quando vedi "Add Python 3.12 to PATH":
+   ⭐⭐⭐ SPUNTA LA CASELLA ⭐⭐⭐
+   Clicca: "Install Now"
+   Attendi il completamento
+
+PASSO 4️⃣  RIAVVIA COMPUTER
+   ⚠️ IMPORTANTE: Riavvia il computer
+   (Serve per aggiornare le variabili di sistema)
+
+
+✅ DOPO RIAVVIO
+═════════════════════════════════════════════════════════════════════════════
+
+1. Apri PowerShell
+2. Digita: py -3.12 --version
+3. Dovresti vedere: Python 3.12.x ✅
+4. Torna in C:\Users\gabri\Desktop\CREW\
+5. Doppio click su: SETUP_FIX.bat
+6. Attendi 5-10 minuti
+7. Vedrai: "✅ SETUP COMPLETATO CON SUCCESSO!"
+
+
+📁 FILE CHE HAI A DISPOSIZIONE
+═════════════════════════════════════════════════════════════════════════════
+
+🚀 SCARICA_PYTHON.bat             ← ESEGUI QUESTO SUBITO! (facile)
+📖 INSTALLA_SUBITO.txt            ← Se preferisci leggere prima
+📖 INSTALLA_PYTHON_3.12.md        ← Guida dettagliata (lungo)
+🔧 SETUP_FIX.bat                  ← Esegui dopo aver installato Python
+
+
+⏱️ TEMPI (NON SPAVENTARTI!)
+═════════════════════════════════════════════════════════════════════════════
+
+Scarica Python:         2-3 minuti
+Installa Python:        2-3 minuti
+Riavvia computer:       1-2 minuti
+SETUP_FIX.bat:          5-10 minuti
+Verifica finale:        1 minuto
+────────────────────────────────
+TOTALE:                 15-20 minuti
+
+
+🎓 DOPO CHE TUTTO FUNZIONA
+═════════════════════════════════════════════════════════════════════════════
+
+Per avviare il sistema CREW:
+
+cd src\coding_crew
+python main.py
+
+
+═════════════════════════════════════════════════════════════════════════════
+
+                    🚀 PROSSIMO PASSO IMMEDIATO:
+
+                  Doppio click su: SCARICA_PYTHON.bat
+
+        Oppure visita manualmente: https://www.python.org/downloads/
+
+
+Poi: INSTALLA → RIAVVIA → SETUP_FIX.bat → FINE! ✅
+
+═════════════════════════════════════════════════════════════════════════════

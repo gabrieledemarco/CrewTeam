@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coding-crew"
+version = "0.1.0"
+description = "Multi-agent crew for code development"
+requires-python = ">=3.10"
+dependencies = [
+    "crewai",
+    "crewai-tools",
+    "langchain-openai",
+    "python-dotenv",
+]
+
+[project.scripts]
+run-crew = "coding_crew.main:main"
